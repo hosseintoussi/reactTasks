@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "ReactTasks" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body class="ui container">
+<div class="ui secondary  menu">
+  <a class="item">
+    <h2><i class="tasks icon"></i>ReactTasks</h2>
+  </a>
+<!--   <div class="right menu">
+     <a class="ui item">
+      Logout
+    </a>
+  </div> -->
+</div>
+<div class="ui section divider"></div>
+<%= yield %>
+  </body>
+</html>
