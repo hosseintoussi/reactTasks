@@ -3,6 +3,7 @@
 ### What is this repository for? ###
 
 This is a quick ToDo list app with:
+
 - Rails
 - ReactJS
 - Semantic UI
